@@ -13,9 +13,9 @@ public class Demo1Application {
         SpringApplication.run(Demo1Application.class, args);
     }
 
-    @GetMapping
+   /* @GetMapping
     public String index(){
         return "Hello World";
-    }
+    }*/
 
 }

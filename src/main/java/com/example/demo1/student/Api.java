@@ -5,8 +5,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.time.LocalDate;
-import java.time.Month;
 import java.util.List;
 
 @RequestMapping("api/v1/student")
@@ -20,6 +18,9 @@ public class Api {
     public Api(StudentService studentService) {
         this.studentService = studentService;
     }
+
+    //GET is used to request data from a specified resource
+    //Getmapping works as shortcut of requestMapping
     @GetMapping
     public List<Student> getStudent() {
         return studentService.getStudent();
